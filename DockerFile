@@ -1,0 +1,9 @@
+FROM prestashop/prestashop:latest
+
+# Configuration de l'environnement
+ENV PS_DEV_MODE true
+ENV PS_INSTALL_AUTO 0
+ENV DB_SERVER db
+
+# Exposez le port 80 pour le serveur web
+EXPOSE 80
